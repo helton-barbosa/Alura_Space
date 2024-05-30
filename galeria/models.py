@@ -32,6 +32,7 @@ class Fotografia(models.Model):
         null=False,
         blank=False
     )
+    publicada = models.BooleanField(default=False)
 
     def __str__(self) -> str:
         return f'Fotografia [nome={self.nome}]'
