@@ -33,10 +33,9 @@ class Fotografia(models.Model):
         blank=False
     )
 
-    foto = models.CharField(
-        max_length=100,
-        null=False,
-        blank=False
+    foto = models.ImageField(
+        upload_to="fotos/%Y/%m/%d/",
+        blank=True
     )
 
     publicada = models.BooleanField(default=False)
