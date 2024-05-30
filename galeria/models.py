@@ -46,4 +46,4 @@ class Fotografia(models.Model):
     )
 
     def __str__(self) -> str:
-        return f'Fotografia [nome={self.nome}]'
+        return self.nome
